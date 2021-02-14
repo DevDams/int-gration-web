@@ -1,4 +1,8 @@
+/* Font general */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Font for the number in the page */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
 
 * {
     margin: 0;
@@ -9,6 +13,11 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #FFFEFF;
+    color: #32297C;
+}
+
+p {
+    font-weight: 500;
 }
 
 ul li {
@@ -105,4 +114,339 @@ a {
     bottom: 20px;
     color: white;
     left: 45px;
+}
+
+
+
+.content {
+    position: relative;
+    left: 100px;
+    padding: 5px 30px;
+    width: 60%;
+    height: 100%;
+}
+
+.banner {
+    background-color: #FF9F03;
+    color: white;
+    border-radius: 25px;
+    padding: 20px 30px;
+}
+
+.banner h1 {
+    font-weight: 400;
+}
+
+.banner p {
+    font-weight: 200;
+}
+
+.calendar_head {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.calendar_head .date span {
+    background-color: #F8525E;
+    color: white;
+    border-radius: 25px;
+    padding: 3px 12px;
+    margin-left: 20px;
+}
+
+.calendar_head .date span .fa-chevron-left {
+    opacity: .7;
+}
+
+.month {
+    background-color: #F8F6FF;
+    color: #312a7ea4;
+    padding: 7px;
+    border-radius: 10px;
+    margin-top: -7px;
+}
+
+
+.calendar_date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 0 20px;
+    height: 100px;
+    border-top: 1px solid #312a7e0c;
+    border-bottom: 1px solid #312a7e0c;
+}
+
+.calendar_date .day {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calendar_date .day h4 {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.calendar_date .day p {
+    margin-top: 10px;
+    font-weight: 200;
+    color: #312a7ebb;
+}
+
+.calendar_date .day .dot_orange {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #FF9F03;
+}
+
+.calendar_date .day .dot_green {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #8DDFED;
+}
+
+.calendar_date .day .dot_red {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #F3586A;
+}
+
+.calendar_date .day .dot_white {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+
+.calendar_date .day_index {
+    background-color: #F3586A;
+    color: white;
+    padding: 12px 13px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px -5px #F3586A;
+}
+
+.calendar_date .day_index p {
+    color: white;
+}
+
+
+.report {
+    margin-top: 20px;
+}
+
+.report_head .title h3 {
+    font-weight: 500;
+}
+
+.report_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.report_head ul li {
+    display: inline;
+    padding: 0 10px;
+}
+
+.report_head ul li.active {
+    font-weight: 700;
+}
+
+.report_card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+.report_card .card_active {
+    text-align: center;
+    border-radius: 25px;
+    padding: 12px 5px;
+    width: 150px;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.144);
+}
+
+.report_card .card_active i {
+    border: 1px solid red;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.report_card .card_active p {
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.report_card .card_active .btn_index {
+    background-color: #FF9F03;
+    color: white;
+    margin-top: 10px;
+    padding: 15px 30px;
+    border-radius: 20px;
+}
+
+.report_card .card_active button {
+    border: none;
+    background-color: transparent;
+    font-size: 26px;
+    color: #312A7E;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+.report_card .card {
+    border: 1px solid #312a7e1c;
+    text-align: center;
+    border-radius: 25px;
+    padding: 15px 20px;
+    height: 140px;
+}
+
+.report_card .card i {
+    border: 1px solid red;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+.report_card .card p {
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.report_card .card .btn_index {
+    background-color: #FF9F03;
+    color: white;
+    margin-top: 10px;
+    padding: 15px 20px;
+    border-radius: 25px;
+}
+
+.report_card .card .fa-server {
+    border: 1px solid #FF9F03;
+    background-color: #FF9F03;
+    color: white;
+}
+
+.report_card .card .fa-music {
+    border: 1px solid #F05867;
+    color: #F05867;
+}
+
+.report_card .card .fa-trash-alt {
+    border: 1px solid #88DEEC;
+    color: #88DEEC;
+}
+
+.report_card .card .fa-instagram {
+    border: 1px solid #312A7E;
+    color: #312A7E;
+}
+
+.report_card .card button {
+    border: none;
+    background-color: transparent;
+    font-size: 26px;
+    color: #312A7E;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+
+
+.update {
+    margin-top: 20px;
+}
+
+.update .title h3 {
+    font-weight: 500;
+}
+
+.update_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.update_info .update_systeme {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px -10px #312a7e94;
+}
+
+.update_info .update_application {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    background-color: #312A7E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.update_info .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 40px;
+    font-size: 14px;
+}
+
+.update_info .text_1 {
+    border-right: 1px solid #312a7e28;
+}
+
+.update_info .text_1 p {
+    color: #312a7ea6;
+    font-size: 10px;
+    font-weight: 200;
+}
+
+.update_info .text_2 {
+    border-right: 1px solid #c4c2e43b;
+}
+
+.update_info .text_2 p {
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.update_info .stat {
+    display: flex;
+    align-items: center;
+    padding: 13px 10px;
+    border-radius: 50%;
+}
+
+.update_info .stat_1 {
+    border: 4px solid #312a7e23;
+    border-top: 4px solid #F05867;
+    transform: rotate(45deg);
+}
+
+.update_info .stat_1 span {
+    transform: rotate(-45deg);
+}
+
+.update_info .stat_2 {
+    border: 4px solid #bebbdf23;
+    border-top: 4px solid #FF9F03;
+    border-right: 4px solid #FF9F03;
+    transform: rotate(-45deg);
+}
+
+.update_info .stat_2 span {
+    transform: rotate(45deg);
 }
